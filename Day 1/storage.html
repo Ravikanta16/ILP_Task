@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Storage</title>
+</head>
+<body>
+  <h2>Counter: <span id="counter">0</span></h2>
+  <h2>LocalCounter: <span id="localCounter">0</span></h2>
+  <h2>SessionCounter: <span id="sessionCounter">0</span></h2>
+
+  <button id="incrementBtn">Increment Counter</button>
+  <button id="saveLocalBtn">Save to LocalStorage</button>
+  <button id="saveSessionBtn">Save to SessionStorage</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let count = 0;
+
+      const counter = document.getElementById("counter");
+      const localcount = document.getElementById("localCounter");
+      const sessioncount = document.getElementById("sessionCounter");
+
+      const incrementBtn = document.getElementById("incrementBtn");
+      const saveLocalBtn = document.getElementById("saveLocalBtn");
+      const saveSessionBtn = document.getElementById("saveSessionBtn");
+
+      incrementBtn.addEventListener("click", function () {
+        count++;
+        counter.innerHTML = count;
+      });
+
+      saveLocalBtn.addEventListener("click", function () {
+        localStorage.setItem("storedlocalCounter", count.toString());
+        localcount.innerHTML = count;
+      });
+
+      saveSessionBtn.addEventListener("click", function () {
+        sessionStorage.setItem("storedsessionCounter", count.toString());
+        sessioncount.innerHTML = count;
+      });
+      window.addEventListener("load", () => {
+        sessioncount.innerHTML = sessionStorage.getItem("storedsessionCounter") || "-";
+        localcount.innerHTML = localStorage.getItem("storedlocalCounter") || "-";
+      });
+
+    });
+  </script>
+</body>
+</html>
