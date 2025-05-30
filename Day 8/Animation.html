@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sequential Image Animation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      background: lightblue;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: gray;
+      font-size: 24px;
+    }
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 400px;
+      height: 550px;
+      border-radius: 15px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h2 style="text-align: center;">Sequential Image Animation</h2>
+  <div class="img-container">
+    <img id="img1" src="https://imgs.search.brave.com/FNaBchRhPDOHyQUw5F3uEEAMx65bBk0ABM0It_oROU8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bmFzYS5nb3Yvd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDUv/aW1hZ2UtMGFlZmY4/LmpwZWc_dz0xMDI0" alt="Image 1">
+    <img id="img2" src="https://imgs.search.brave.com/XLahqBDpawTs5TYyYR2_r8tXF0VPh7GlZM5iIJJ23lA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zY2ll/bmNlLm5hc2EuZ292/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzAzL2h1YmJsZS13/ZWJiLW9ic2Vydmlu/Zy10b29sLWxvZ28t/c3RzY2ktMDFocTE5/NHY4dHM2cGF2enp3/c3h2ZHg2ZHouanBn/P3c9MTAyNA" alt="Image 2">
+    <img id="img3" src="https://imgs.search.brave.com/PMOhuhq5S9MCxI2IKHyh5JIJhhWONT7DxLWbwWji3cw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTMv/Mjg1Lzc3NC9zbWFs/bC9oaWdoLXJlc29s/dXRpb24tZmxvd2Vy/LW1hY3JvLXdpdGgt/c3R1bm5pbmctYm9r/ZWgtZm9yLXBpY3R1/cmUtcGVyZmVjdC1z/dG9jay1pbWFnZXMt/ZnJlZS1waG90by5q/cGc" alt="Image 3">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
