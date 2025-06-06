@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  redis-server:
+    build:
+      context: ./redis-image
+    ports:
+      - "6379:6379"
+
+  visitor-server:
+    build:
+      context: ./visitor-server
+    ports:
+      - "8081:8081"
+    depends_on:
+      - redis-server
+    restart: on-failure
+
+  client:
+    build:
+      context: ./client
+    ports:
+      - "3000:3000"               
+    depends_on:
+      - visitor-server
