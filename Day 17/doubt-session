@@ -1,0 +1,28 @@
+Date- 8th June 2025  
+Session Type: Recorded Doubt Session  
+
+Topics Covered:
+- Docker
+- Git Pull Requests
+- React Basics
+- APIs (Integration & Usage)
+
+• Docker:
+  - Docker helps run apps in containers.
+  - Use volumes to make changes without restarting the app.
+  - Use docker-compose to manage multiple services.
+
+• Pull Request:
+  - PR is used to ask for code review before merging.
+  - Always give a clear title and message in PR.
+  - Review other's code and leave comments if needed.
+
+• React:
+  - React is used to build user interfaces.
+  - Use props to pass data between components.
+  - Use state to manage changing data.
+
+• API:
+  - APIs help fetch or send data between client and server.
+  - Use fetch or axios to call APIs.
+  - Handle errors using try-catch.
