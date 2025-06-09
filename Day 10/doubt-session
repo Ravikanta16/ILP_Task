@@ -1,0 +1,33 @@
+Date: 1st June 2025  
+Session Type: Recorded Doubt Session  
+
+Topics Covered:
+- Express.js
+- TypeScript
+- Generic Types
+- any Type
+
+Notes:
+
+• Express.js:
+  - Express is a web framework for Node.js.
+  - Used to create APIs and handle routes (GET, POST, etc.).
+  - `app.get()` is used to create a GET route.
+  - `req` (request) and `res` (response) objects are used to handle data.
+
+• TypeScript:
+  - TypeScript is JavaScript with types.
+  - It helps catch errors during development.
+  - Use `interface` or `type` to define the shape of an object.
+
+• Generic Types:
+  - Generics make code flexible and reusable.
+  - Example: `function identity<T>(arg: T): T { return arg; }`
+  - You can use any type in place of `T` (like string, number, etc.).
+
+• any Type:
+  - `any` disables type checking.
+  - Avoid using `any` unless absolutely necessary.
+  - Prefer specific or generic types for better code safety.
+
+
